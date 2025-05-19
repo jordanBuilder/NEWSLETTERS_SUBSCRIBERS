@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Hey !
 
-## Getting Started
+Bienvenue sur ce mini projet **Next.js** lancé avec [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) !
 
-First, run the development server:
+## 📩 À propos du projet
 
-```bash
+Il s'agit d'une **simulation de système de newsletter** où vous pouvez enregistrer les emails de vos abonnés.
+
+Ce projet utilise **[Mailchimp](https://mailchimp.com/)**, une plateforme d’emailing, pour :
+
+- Enregistrer les emails dans une liste d’audience
+- Envoyer des newsletters personnalisées à vos abonnés
+- Utiliser des **templates** pour rendre vos mails plus attrayants
+
+> 🔐 Pour cela, vous devrez créer un compte Mailchimp et récupérer les informations d’identification nécessaires (clé API & ID d’audience).
+
+---
+
+## 🚀 Getting Started
+
+### Étapes à suivre :
+
+1. **Créer un compte Mailchimp**  
+   👉 [https://mailchimp.com/](https://mailchimp.com/)
+
+2. **Choisir une offre gratuite** pour commencer
+
+3. **Créer une clé d'API** :  
+   Allez dans *Account → Extras → API Keys*
+
+4. **Récupérer l'ID de votre audience** :  
+   Allez dans *Audience → Settings → Audience name and defaults*
+
+5. **Créer un fichier `.env` à la racine du projet** et y ajouter les variables :
+
+   ```env
+   MAILCHIMP_API_KEY=your_api_key
+   MAILCHIMP_API_SERVER= Mettez ici les 4 derniers caractères de votre clé d'api .
+   MAILCHIMP_AUDIENCE_ID=your_audience_id
+
+6. Installation :
+npm install
+
+7. Lancer le serveur de développement:
+
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+8. Développement:
+   Vous pouvez commencer à éditer la page principale dans :app/page.tsx
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+9. Pour aller plus loin
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    📖 Documentation Next.js
 
-## Learn More
+    🧠 Apprendre Next.js
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    💻 Dépôt GitHub de Next.js
